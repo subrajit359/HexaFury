@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brainware University</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #800000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar h1 {
+      font-size: 1.5rem;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar ul li {
+      cursor: pointer;
+    }
+
+    .navbar ul li:hover {
+      text-decoration: underline;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Header section */
+    .header {
+      background: url('https://www.brainwareuniversity.ac.in/images/banner-7.jpg') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .header h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+
+    /* About section */
+    .about {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about h3 {
+      color: #800000;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      margin-bottom: 1rem;
+    }
+
+    /* Complaint box */
+    .complaint-box {
+      background-color: #fff;
+      padding: 3rem 2rem;
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .complaint-box h3 {
+      color: #800000;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .complaint-box form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .complaint-box input,
+    .complaint-box textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .complaint-box button {
+      background-color: #800000;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .complaint-box button:hover {
+      background-color: #a00000;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .header h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Brainware University</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#complaint">Complaint</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="header">
+    <h2>Welcome to Brainware University</h2>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h3>About Us</h3>
+    <p>Brainware University is one of the leading private universities in West Bengal, offering a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines.</p>
+    <p>Our mission is to foster academic excellence, promote research, and develop skilled professionals ready to meet the demands of the modern world.</p>
+  </section>
+
+  <!-- Complaint Box Section -->
+  <section id="complaint" class="complaint-box">
+    <h3>Submit a Complaint</h3>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Describe your complaint..." required></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Brainware University | All Rights Reserved
+  </footer>
+
+</body>
+</html>
